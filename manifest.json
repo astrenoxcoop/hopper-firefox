@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Hopper",
+    "description": "A Firefox extension that opens web+at:// URIs with hopper.at.",
+    "version": "1.0.0",
+    "icons": {
+        "256": "icons/256.png"
+    },
+    "homepage_url": "https://hopper.at/",
+    "author": "Nick Gerakines",
+    "protocol_handlers": [
+        {
+            "protocol": "web+at",
+            "name": "Hopper AT-URI Extension",
+            "uriTemplate": "https://hopper.at/?aturi=%s"
+        }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "hopper@hopper.at",
+            "strict_min_version": "128.0",
+            "update_url": "https://hopper.at/hopper-firefox-updates.json"
+        }
+    }
+}
